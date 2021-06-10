@@ -3,5 +3,7 @@
 ## Summary
 
 > Displays color circles
+
 > Allows callback onClick
+
 > Tunable component
