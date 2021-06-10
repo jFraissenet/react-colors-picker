@@ -1,0 +1,1 @@
+export {ColorsPicker} from './ColorsPicker';
