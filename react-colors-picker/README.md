@@ -2,6 +2,8 @@
 
 ## Summary
 
+> You are a web developer and want, for example, to sell products with various colors. This components allows to modify your carousel pictures or to dynamically change any properties by simply clicking on the corresponding item. You just need to code your callback function.
+
 > Displays color circles
 
 > Allows callback onClick
@@ -23,10 +25,10 @@ How to use it ?
 ```bash
 import {ColorsPicker} from '@jfraissenet/react-colors-picker';
 
-const pl=[{label:"couleur1", value:"#123456"},
-          {label:"couleur2", value:"#eeeeee"},
-          {label:"couleur3", value:"#123456"}, 
-          {label:"couleur4", value:"#eeeeee"}]
+const pl=[{label:"color1", value:"#123456"},
+          {label:"color2", value:"#eeeeee"},
+          {label:"color3", value:"#123456"}, 
+          {label:"color4", value:"#eeeeee"}]
 
 function App() {
   return (
@@ -43,18 +45,20 @@ function handleOnClick(colorItem) {
 export default App;
 ```
 
+label and value are mandatories.
+
 ## Properties
 
-The component is totally tunable. It's possible to change shape, border, size. You can allow the zoom when hovering the circle or not
+The component is completelly tunable. It's possible to change shape, border, size of the items. You can allow the zoom when hovering over the circle or not
 
 | Properties     | Types      | Default values | Mandatory | Comments|
 | ------------- | ------------- |-----------| ----------| ------------|
-| colors  | Array | none | Yes | Array od colors objects [{label: "Nom13, value:"#ffffff"}, ...] |
-| handle  | Function  | none | Yes | Callback onClick. It return the object sent |
+| colors  | Array | none | Yes | Array of colors objects [{label: "Nom13, value:"#ffffff"}, ...] |
+| handle  | Function  | none | Yes | Callback on click. It return the object sent |
 | borderRadius  | String  | 20px | No | Change the shape. "0px" --> square. "20px" --> circle |
-| border  | String  | 1px solid black | No | Change the design of the border |
-| width  | String  | 28px | No | Change the color width |
-| height  | String  | 28px | No | Change the color height |
+| border  | String  | 1px solid black | No | Change the design of the item's border |
+| width  | String  | 28px | No | Change the item width |
+| height  | String  | 28px | No | Change the item height |
 | marginRight  | String  | 10px | No | Change the right margin |
 | marginBottom  | String  | 4px | No | change the bottom margin |
-| transformOnHover  | Boolean  | true | No | When hovering on colors, a scale transformation of 1.1 appears |
+| transformOnHover  | Boolean  | true | No | When hovering on items, a scale transformation of 1.1 appears |
