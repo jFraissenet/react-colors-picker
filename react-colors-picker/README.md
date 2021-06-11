@@ -47,7 +47,14 @@ export default App;
 
 The component is totally tunable. It's possible to change shape, border, size. You can allow the zoom when hovering the circle or not
 
-| Propertie     | Type      | Default values | Mandatory | Comments|
+| Properties     | Types      | Default values | Mandatory | Comments|
 | ------------- | ------------- |-----------| ----------| ------------|
-|   | colors  | Array | none | Yes | Array od colors objects [{label: "Nom13, value:"#ffffff"}, ...] |
+| colors  | Array | none | Yes | Array od colors objects [{label: "Nom13, value:"#ffffff"}, ...] |
 | handle  | Function  | none | Yes | Callback onClick. It return the object sent |
+| borderRadius  | String  | 20px | No | Change the shape. "0px" --> square. "20px" --> circle |
+| border  | String  | 1px solid black | No | Change the design of the border |
+| width  | String  | 28px | No | Change the color width |
+| height  | String  | 28px | No | Change the color height |
+| marginRight  | String  | 10px | No | Change the right margin |
+| marginBottom  | String  | 4px | No | change the bottom margin |
+| transformOnHover  | Boolean  | true | No | When hovering on colors, a scale transformation of 1.1 appears |
